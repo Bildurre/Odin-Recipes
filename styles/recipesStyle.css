@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "AngelineVintage";
+  src: url("../fonts/Angeline\ Vintage_Demo.ttf");
+}
+
+@font-face {
+  font-family: "GreatVibes";
+  src: url("../fonts/GreatVibes-Regular.ttf");
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 16px);
+  background-color: rgba(216, 231, 248, 0.897);
+  padding: 0 5vw 0 5vw;
+  margin: 0;
+}
+
+
+body header, body main, body footer{
+  display: flex;
+}
+
+
+body header {
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: auto;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  width: 51vw;
+}
+
+body header h1 {
+  font-family: 'AngelineVintage';
+  font-size: 5em;
+  color: rgb(1, 5, 61);
+  margin: 0;
+}
+
+body header img {
+  width: calc(51vw + 1px);
+  height: 34vw;
+  object-fit: cover;
+  object-position: 0% 0%;
+  border: 1px solid rgb(4, 12, 13);
+  margin-left: 2px;
+}
+
+body main {
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: auto;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 51vw;
+  min-height: calc(61vh - 16px);
+}
+
+body main h2 {
+  font-family: 'GreatVibes';
+  font-size: 2.5em;
+  font-weight: 500;
+  color: rgb(2, 7, 82);
+  margin: 20px 0px 0 20px;
+}
+
+body main p,
+body main ul li,
+body main ol li {
+  font-family: sans-serif;
+  font-size: 1.2em;
+}
+
+body main ul {
+  list-style-type: circle;
+}
+
+body main ol {
+  list-style-type: lower-roman;
+}
+
+body footer p {
+  font-family: sans-serif;
+  color:rgb(3, 7, 63);
+  font-size: 0.75em;
+  margin:0;
+}
+
+body footer {
+  flex: auto;
+  height: 5vh;
+  flex-basis: auto;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body nav {
+  width: 51vw;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(177, 182, 255);
+  padding: 1vh 0 1vh 0;
+  border: 1px solid rgb(4, 12, 13);
+}
+
+body nav a {
+  text-decoration: none;
+  color: rgb(3, 7, 63);
+  font-size: 1.2em;
+  font-weight: 200;
+  font-family: sans-serif;
+}
